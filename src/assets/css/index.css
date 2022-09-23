@@ -1,0 +1,211 @@
+:root {
+    --primaryColor: #283347;
+    --primaryColorLight: #28334765;
+    --secondaryColor: #FFBA27;
+    --secondaryColorLight: #ffbb2767;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bgPrimary {
+    background-color: var(--primaryColor);
+}
+
+.textPrimary {
+    color: var(--primaryColor);
+}
+
+.bgPrimaryLight {
+    background-color: var(--primaryColorLight);
+}
+
+.textPrimaryLight {
+    color: var(--primaryColorLight);
+}
+
+.bgSecondary {
+    background-color: var(--secondaryColor);
+}
+
+.textSecondary {
+    color: var(--secondaryColor);
+}
+
+.bgSecondaryLight {
+    background-color: var(--secondaryColorLight);
+}
+
+.textSecondaryLight {
+    color: var(--secondaryColorLight);
+}
+
+.bgOverLay {
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.topNavbar a {
+    color: white !important;
+}
+
+.dropdown-menu a {
+    color: var(--primaryColor) !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--secondaryColor) !important;
+    color: white !important;
+}
+
+.sliderImageContainer img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.sliderImageContainer h3 {
+    font-size: 5rem;
+}
+
+.clamp1,
+.clamp2,
+.clamp3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.clamp1 {
+    -webkit-line-clamp: 1;
+}
+
+.clamp2 {
+    -webkit-line-clamp: 2;
+}
+
+.hoverShadow {
+    transition: all 0.5s;
+}
+
+.hoverShadow:hover {
+    box-shadow: 1px 1px 15px grey !important;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--secondaryColorLight);
+}
+
+.textDecorationNone {
+    text-decoration: none;
+}
+
+.textDecorationNone * {
+    text-decoration: none;
+}
+
+.responsiveIframe {
+    height: 500px;
+}
+
+.card {
+    position: relative;
+    -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    border-radius: 6px;
+    height: 500px;
+    overflow: hidden;
+    width: 350px;
+    margin: 40px auto;
+}
+
+.shimmerBG {
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #ddd;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+}
+
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+.media {
+    height: 200px;
+}
+
+.p-32 {
+    padding: 32px;
+}
+
+.title-line {
+    height: 24px;
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+
+.content-line {
+    height: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.end {
+    width: 40%;
+}
+
+
+
+
+.m-t-24 {
+    margin-top: 24px;
+}
+
+@media screen and (max-width:600px) {
+    .responsiveIframe {
+        height: 300px;
+    }
+
+    .sliderImageContainer img {
+        height: 300px;
+
+    }
+
+    .sliderImageContainer h3 {
+        font-size: 2rem;
+    }
+
+}
